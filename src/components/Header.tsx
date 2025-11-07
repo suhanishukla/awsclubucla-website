@@ -16,7 +16,12 @@ const Header = () => {
             </Link>
           </nav>
         </div>
-        <Button asChild className="rounded-full px-6 bg-primary text-primary-foreground hover:bg-primary/90">
+        <Button className="rounded-full px-8 py-3 text-base font-medium text-[#0A0118]
+            bg-gradient-to-r from-[#9FEAFF] via-[#7FD0FF] to-[#B8C9FF]
+            shadow-[0_0_25px_rgba(100,180,255,0.4)]
+            hover:shadow-[0_0_35px_rgba(120,200,255,0.6)]
+            hover:scale-[1.04]
+            transition-all duration-300 border border-white/10 ring-1 ring-inset ring-white/30">
           <Link to="/team">View Team</Link>
         </Button>
       </div>

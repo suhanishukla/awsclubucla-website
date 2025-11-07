@@ -64,6 +64,16 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        float: {
+          "0%, 100%": {
+            transform: "translateY(0px) rotate(0deg)",
+            opacity: "0.6",
+          },
+          "50%": {
+            transform: "translateY(-10px) rotate(5deg)",
+            opacity: "0.85",
+          },
+        },
         "accordion-down": {
           from: {
             height: "0",
@@ -82,6 +92,8 @@ export default {
         },
       },
       animation: {
+        "float-slow": "float 8s ease-in-out infinite",
+        "float-medium": "float 6s ease-in-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
