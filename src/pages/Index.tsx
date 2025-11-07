@@ -22,42 +22,46 @@ const Index = () => {
             AWS Cloud Club<br />
             <span className="text-5xl md:text-7xl">@UCLA</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            We don't just learn cloud—we <em className="text-foreground italic">build and sell it.</em>
+          <p className="text-xl md:text-2xl text-primary max-w-2xl mx-auto">
+            Empowering bruins to build <span className="text-foreground">and sell</span> the cloud
           </p>
         </div>
       </section>
 
-      {/* Who We Are Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Left Card */}
-            <Card className="p-12 bg-card border-border backdrop-blur-sm">
-              <h2 className="text-4xl font-bold mb-6">Who We Are</h2>
-              <div className="space-y-4 text-lg leading-relaxed">
-                <p className="text-muted-foreground">
-                  We don't just learn cloud—we <em className="text-primary italic">build and sell it.</em>
-                </p>
-                <p className="text-muted-foreground">
-                  We don't just learn cloud—we <em className="text-primary italic">build and sell it.</em>
-                </p>
-                <p className="text-muted-foreground">
-                  We don't just learn cloud—we <em className="text-foreground italic">build and sell it.</em>
-                </p>
-              </div>
-              <Button className="mt-8 rounded-full px-8 bg-primary text-primary-foreground hover:bg-primary/90">
-                Discover Our Projects
-              </Button>
-            </Card>
+      {/* Content Sections */}
+      <section className="py-20 px-6 space-y-8">
+        <div className="max-w-4xl mx-auto space-y-8">
+          {/* Who We Are */}
+          <Card className="p-12 bg-gradient-to-br from-card/50 to-secondary/30 border-primary/20 backdrop-blur-sm text-center">
+            <h2 className="text-4xl font-bold mb-6 text-foreground">Who We Are</h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              We don't just learn cloud—we <em className="text-primary italic">build and sell it.</em>
+            </p>
+            <Button className="rounded-full px-8 bg-accent text-accent-foreground hover:bg-accent/90">
+              View Projects Soon
+            </Button>
+          </Card>
 
-            {/* Right Card - Empty with gradient */}
-            <Card className="p-12 bg-gradient-to-br from-secondary to-card border-border backdrop-blur-sm" />
-          </div>
+          {/* What We Do */}
+          <Card className="p-12 bg-gradient-to-br from-card/50 to-secondary/30 border-primary/20 backdrop-blur-sm text-center">
+            <h2 className="text-4xl font-bold mb-6 text-foreground">What We Do</h2>
+            <p className="text-lg text-muted-foreground">
+              Work like a Solutions Architect: scope problems, design cloud systems, and deliver solutions for UCLA orgs, startups, and industry teams solving real-world problems.
+            </p>
+          </Card>
 
-          <div className="flex justify-center mt-12">
-            <Button asChild className="rounded-full px-12 py-6 text-lg bg-primary text-primary-foreground hover:bg-primary/90">
-              <Link to="/team">View Team</Link>
+          {/* Why Us */}
+          <Card className="p-12 bg-gradient-to-br from-card/50 to-secondary/30 border-primary/20 backdrop-blur-sm text-center">
+            <h2 className="text-4xl font-bold mb-6 text-foreground">Why Us</h2>
+            <p className="text-lg text-muted-foreground">
+              We don't just build with impact, we <em className="text-primary italic">also sell</em> with impact. We have hands-on creation, access to AWS resources, build industry-relevant skills.
+            </p>
+          </Card>
+
+          {/* Join Us Button */}
+          <div className="flex justify-center pt-8">
+            <Button className="rounded-full px-12 py-6 text-lg bg-accent text-accent-foreground hover:bg-accent/90">
+              Join Us
             </Button>
           </div>
         </div>
