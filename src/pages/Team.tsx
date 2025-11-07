@@ -7,32 +7,32 @@ const teamMembers = [
   {
     name: "Chaaya Patel",
     role: "Founder",
-    image: "/placeholder.svg"
+    image: "/chaaya.png"
   },
   {
     name: "Ashita Singh",
     role: "Founder",
-    image: "/placeholder.svg"
+    image: "/ashita.JPG"
   },
   {
     name: "Ishani Saran",
     role: "External VP",
-    image: "/placeholder.svg"
+    image: "/ishani.jpg"
   },
   {
     name: "Suhani Shukla",
     role: "Technical Director",
-    image: "/placeholder.svg"
+    image: "/suhaniheadshot.JPG"
   },
   {
     name: "Sana Indap",
     role: "Outreach, Marketing + Design Lead",
-    image: "/placeholder.svg"
+    image: "/sanaheadshot.jpg"
   },
   {
     name: "Proud Puangmaha",
     role: "Partnerships Director",
-    image: "/placeholder.svg"
+    image: "/proud.jpeg"
   }
 ];
 

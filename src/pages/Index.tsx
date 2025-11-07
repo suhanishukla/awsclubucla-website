@@ -71,8 +71,8 @@ const Index = () => {
       <footer className="py-8 px-6 border-t border-border">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/placeholder.svg" alt="AWS Cloud Club" className="h-8 w-8" />
-            <span className="text-foreground text-xs">Cloud<br/>Clubs<br/>@UCLA</span>
+            <img src="/awscloudclubnewlogo.png" alt="AWS Cloud Club" className="h-20 w-20" />
+            <span className="text-foreground text-xs"></span>
           </div>
           <p className="text-sm text-muted-foreground">
             © 2025 AWS Cloud Club @ UCLA. All rights reserved.

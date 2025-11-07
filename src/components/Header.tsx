@@ -7,8 +7,8 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-8">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/placeholder.svg" alt="AWS Cloud Club" className="h-10 w-10" />
-            <span className="text-foreground font-semibold text-sm">Cloud<br/>Clubs<br/>@UCLA</span>
+            <img src="/awscloudclubnewlogo.png" alt="AWS Cloud Club" className="h-20 w-20" />
+            <span className="text-foreground font-semibold text-sm"></span>
           </Link>
           <nav>
             <Link to="/" className="text-foreground hover:text-primary transition-colors">
