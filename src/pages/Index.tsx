@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import DecorativeStars from "@/components/DecorativeStars";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -54,10 +55,9 @@ const Index = () => {
             <Card className="p-12 bg-gradient-to-br from-secondary to-card border-border backdrop-blur-sm" />
           </div>
 
-          {/* Bottom Join Button */}
           <div className="flex justify-center mt-12">
-            <Button className="rounded-full px-12 py-6 text-lg bg-primary text-primary-foreground hover:bg-primary/90">
-              Join Us
+            <Button asChild className="rounded-full px-12 py-6 text-lg bg-primary text-primary-foreground hover:bg-primary/90">
+              <Link to="/team">View Team</Link>
             </Button>
           </div>
         </div>

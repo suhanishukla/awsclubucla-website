@@ -16,8 +16,8 @@ const Header = () => {
             </Link>
           </nav>
         </div>
-        <Button className="rounded-full px-6 bg-primary text-primary-foreground hover:bg-primary/90">
-          Join Us
+        <Button asChild className="rounded-full px-6 bg-primary text-primary-foreground hover:bg-primary/90">
+          <Link to="/team">View Team</Link>
         </Button>
       </div>
     </header>
