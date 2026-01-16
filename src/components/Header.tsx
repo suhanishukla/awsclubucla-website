@@ -10,9 +10,17 @@ const Header = () => {
             <img src="/awscloudclubnewlogo.png" alt="AWS Cloud Club" className="h-20 w-20" />
             <span className="text-foreground font-semibold text-sm"></span>
           </Link>
-          <nav>
+          <nav className="flex items-center gap-6">
             <Link to="/" className="text-foreground hover:text-primary transition-colors">
               Home
+            </Link>
+
+            <Link to="/join" className="text-foreground hover:text-primary transition-colors">
+              Join Us
+            </Link>
+
+            <Link to="/events" className="text-foreground hover:text-primary transition-colors">
+              Events
             </Link>
           </nav>
         </div>
