@@ -13,16 +13,14 @@ const Join = () => {
         <div className="max-w-3xl mx-auto">
           <Card className="p-10 bg-gradient-to-br from-card/50 to-secondary/30 border-primary/20 backdrop-blur-sm text-center">
             <h1 className="text-5xl font-bold mb-4">Join AWS Cloud Club</h1>
-            <p className="text-lg text-[#9B7BFF] mb-2">
-              Now recruiting for core leadership and Cloud Architects!
-            </p>
+
             <p className="text-md text-[#9B7BFF] mb-8">
-              Open till Friday 1/23, 11:59 pm.
+              Stay in the loop about our upcoming events and workshops!
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfWroAXoPKyU8Pena3c1Stv1rUaBOAzsTScFXzRT3md_aly7Q/viewform"
+                href="https://forms.gle/7AYG6tqyJur1a1Pi9"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -32,7 +30,7 @@ const Join = () => {
                   hover:shadow-[0_0_35px_rgba(120,200,255,0.6)]
                   hover:scale-[1.04]
                   transition-all duration-300 border border-white/10 ring-1 ring-inset ring-white/30">
-                  Open Application
+                  Interest Form
                 </Button>
               </a>
 

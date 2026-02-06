@@ -21,14 +21,14 @@ const teamMembers = [
   },
   {
     name: "Ishani Saran",
-    role: "External VP",
+    role: "Co-President",
     image: "/ishani.jpg",
     objectPosition: "center",
     linkedin: "https://www.linkedin.com/in/ishani-saran/"
   },
   {
     name: "Suhani Shukla",
-    role: "Technical Director",
+    role: "Co-President",
     image: "/suhaniheadshot.JPG",
     objectPosition: "center -15px",
     scale: 1.6,
@@ -60,7 +60,7 @@ const Team = () => {
       <main className="pt-24 pb-16 px-6">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-5xl font-bold text-center mb-16 text-foreground">
-            Meet the Team
+            Meet the Founding Team
           </h1>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">

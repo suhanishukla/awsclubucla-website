@@ -38,7 +38,7 @@ const Index = () => {
           <Card className="p-12 bg-gradient-to-br from-card/50 to-secondary/30 border-primary/20 backdrop-blur-sm text-center">
             <h2 className="text-4xl font-bold mb-6 text-foreground">Who We Are</h2>
             <p className="text-lg text-[#9B7BFF] mb-6">
-              We don't just learn cloud—we <em className="italic text-[#9B7BFF]">build and sell </em> it.
+              We don't just learn cloud—we <em className="italic text-[#9B7BFF]">build, deploy,</em> and <em className="italic text-[#9B7BFF]">pitch</em> it.
             </p>
             <Button className="rounded-full px-8 py-3 text-base font-medium text-[#0A0118]
             bg-gradient-to-r from-[#9FEAFF] via-[#7FD0FF] to-[#B8C9FF]
@@ -62,7 +62,7 @@ const Index = () => {
           <Card className="p-12 bg-gradient-to-br from-card/50 to-secondary/30 border-primary/20 backdrop-blur-sm text-center">
             <h2 className="text-4xl font-bold mb-6 text-foreground">Why Us</h2>
             <p className="text-lg text-[#9B7BFF] mb-6">
-              We don't just build with impact, we <em className="italic text-[#9B7BFF]">also sell</em> with impact. We have hands-on creation, access to AWS resources, build industry-relevant skills.
+            We don’t just build with impact—we learn how to communicate and deliver that impact. Through hands-on projects, AWS resources, and industry-ready skills.
             </p>
           </Card>
 
