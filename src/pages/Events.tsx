@@ -33,7 +33,7 @@ const Events = () => {
           <Card className="p-10 bg-gradient-to-br from-card/50 to-secondary/30 border-primary/20 backdrop-blur-sm text-center">
             <h1 className="text-5xl font-bold mb-4">Upcoming Events</h1>
             <p className="text-lg text-[#9B7BFF]">
-              AWS 101 Builder Workshop — Thursday, Feb. 12 @ 6 pm in Boelter 4283 
+              Architect the Cloud — Thursday, March 5 at 5-8 pm in Cohen Room (Eng VI-134)
             </p>
           </Card>
 
