@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import architectTheCloud from 'public/Flyer - ARCHITECT THE CLOUD.png'
 
 const Events = () => {
   const [open, setOpen] = useState(false);
@@ -48,6 +49,7 @@ const Events = () => {
                   RSVP
               </Button>
             </Link>
+            <img src={'/Flyer - ARCHITECT THE CLOUD.png'}/>
      
           </Card>
 
