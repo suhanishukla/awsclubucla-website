@@ -35,21 +35,10 @@ const Events = () => {
           {/* Upcoming Events */}
           <Card className="p-10 bg-gradient-to-br from-card/50 to-secondary/30 border-primary/20 backdrop-blur-sm text-center">
             <h1 className="text-5xl font-bold mb-4">Upcoming Events</h1>
-            <p className="text-lg text-[#9B7BFF]">
-              Architect the Cloud — Thursday, March 5 at 5-8 pm in Cohen Room (Eng VI-134)
+           
+             <p className="text-lg text-[#9B7BFF]">
+              Stay tuned for upcoming events!
             </p>
-            <br></br>
-            <Link to="https://tinyurl.com/architectrsvp">
-              <Button className="rounded-full px-8 py-3 text-base font-medium text-[#0A0118]
-                bg-gradient-to-r from-[#9FEAFF] via-[#7FD0FF] to-[#B8C9FF]
-                shadow-[0_0_25px_rgba(100,180,255,0.4)]
-                hover:shadow-[0_0_35px_rgba(120,200,255,0.6)]
-                hover:scale-[1.04]
-                transition-all duration-300 border border-white/10 ring-1 ring-inset ring-white/30">
-                  RSVP
-              </Button>
-            </Link>
-            <img src={'/Flyer - ARCHITECT THE CLOUD.png'}/>
      
           </Card>
 
@@ -168,6 +157,12 @@ const Events = () => {
 
               </DialogContent>
             </Dialog>
+             
+             <p className="text-lg text-[#9B7BFF] mt-20 mb-8">
+              Architect the Cloud — Thursday, March 5 at 5-8 pm in Cohen Room (Eng VI-134)
+            </p>
+            <br></br>
+            <img src={'/Flyer - ARCHITECT THE CLOUD.png'}/>
 
           </Card>
 
