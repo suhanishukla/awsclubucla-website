@@ -3,9 +3,6 @@ import DecorativeStars from "@/components/DecorativeStars";
 import { Card } from "@/components/ui/card";
 import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import architectTheCloud from 'public/Flyer - ARCHITECT THE CLOUD.png'
 
 const Events = () => {
   const [open, setOpen] = useState(false);
@@ -22,7 +19,25 @@ const Events = () => {
       alt: "Kickoff event photo 2",
       caption: "Whiteboarding solutions in teams to a system design problem",
     },
-  ];  
+  ];
+
+  const events = [
+    { date: "Feb 5", title: "Kickoff Session", description: "", type: "Workshop" },
+    { date: "Feb 12", title: "AWS Intro Session", description: "", type: "Workshop" },
+    { date: "Feb 19", title: "Project Prototyping", description: "Hands-on tutorial on building and deploying your own LLM microservice on AWS and application user protocols", type: "Workshop" },
+    { date: "Feb 26", title: "Building and Pitching", description: "Learn to build on top of Amazon Nova AI models and craft a winning pitch", type: "Workshop" },
+    { date: "Mar 6", title: "Architect the Cloud", description: "Deep dive into AWS and the AI/ML services stack, hands-on AWS workshop exploring Kiro and Nova AI, career panel with AWS professionals, prizes and giveaways", type: "Event" },
+    { date: "Mar 12", title: "Quarter Recap Meeting", description: "", type: "Workshop" },
+    { date: "Apr 2", title: "Consulting, EC2 & Gen AI Basics", description: "", type: "Workshop" },
+    { date: "Apr 9", title: "Exploring Compute", description: "Learn to build with cloud compute and deploy ML models for real world solutions", type: "Workshop" },
+    { date: "Apr 16", title: "Infra + Foundation Models", description: "", type: "Workshop" },
+    { date: "Apr 23", title: "Building AI Agents", description: "Learn how to build and deploy AI agents while applying responsible AI principles", type: "Workshop" },
+    { date: "Apr 30", title: "Storage & AI Security", description: "Learn to secure and scale AI with reliable data storage", type: "Workshop" },
+    { date: "May 7", title: "AI Prompt Injection Challenge", description: "Learn to identify and defend against prompt injections", type: "Workshop" },
+    { date: "May 14", title: "Building and Selling Tech", description: "Charles Harris, Solutions Architect at AWS, discusses how AI and cloud technologies are being built and brought to market today", type: "Event" },
+    { date: "May 21", title: "Fireside Chat with AWS Architects", description: "Exclusive networking + Q&A session with AWS Solutions Architects and Account Managers led by Prasad Naik, AWS GenAI Sales Leader (Strategic Accounts)", type: "Event" },
+    { date: "May 29", title: "AWS Office Tour", description: "AWS 'Day in the Life' Office Event", type: "Tour" },
+  ];
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-[#0A0118] via-[#12003D] to-[#0A0118] overflow-hidden">
@@ -32,15 +47,7 @@ const Events = () => {
       <section className="relative z-10 pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto space-y-12">
           
-          {/* Upcoming Events */}
-          <Card className="p-10 bg-gradient-to-br from-card/50 to-secondary/30 border-primary/20 backdrop-blur-sm text-center">
-            <h1 className="text-5xl font-bold mb-4">Upcoming Events</h1>
-           
-             <p className="text-lg text-[#9B7BFF]">
-              Stay tuned for upcoming events!
-            </p>
-     
-          </Card>
+          {/* Upcoming Events — add future events here */}
 
           {/* Past Events */}
           <Card className="p-10 bg-gradient-to-br from-card/50 to-secondary/30 border-primary/20 backdrop-blur-sm text-center">
@@ -158,12 +165,44 @@ const Events = () => {
               </DialogContent>
             </Dialog>
              
-             <p className="text-lg text-[#9B7BFF] mt-20 mb-8">
-              Architect the Cloud — Thursday, March 5 at 5-8 pm in Cohen Room (Eng VI-134)
+            <p className="text-lg text-[#9B7BFF] mt-20 mb-8">
+              All Events
             </p>
-            <br></br>
-            <img src={'/Flyer - ARCHITECT THE CLOUD.png'}/>
-
+            <div className="space-y-4 max-w-3xl mx-auto text-left">
+              {events.map((ev, i) => {
+                const badgeColor =
+                  ev.type === "Workshop"
+                    ? "bg-[#9B7BFF] text-white"
+                    : ev.type === "Event"
+                      ? "bg-amber-500 text-white"
+                      : "bg-teal-500 text-white";
+                return (
+                  <div
+                    key={i}
+                    className="flex items-start gap-4 rounded-xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm"
+                  >
+                    <span className="text-sm text-[#9B7BFF] font-medium w-16 shrink-0">
+                      {ev.date}
+                    </span>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="font-semibold text-white">
+                          {ev.title}
+                        </span>
+                        <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${badgeColor}`}>
+                          {ev.type}
+                        </span>
+                      </div>
+                      {ev.description && (
+                        <p className="text-sm text-white/70 mt-1">
+                          {ev.description}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </Card>
 
         </div>
