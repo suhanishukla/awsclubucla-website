@@ -20,7 +20,7 @@ const Join = () => {
 
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
-                href="https://forms.gle/7AYG6tqyJur1a1Pi9"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSe4fnrnHoYaNGXgNPz_JU--F_HnPmRcXks0bPZxo67fbV7xVg/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
               >

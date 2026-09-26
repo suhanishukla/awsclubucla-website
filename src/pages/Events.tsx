@@ -28,15 +28,16 @@ const Events = () => {
     { date: "Feb 26", title: "Building and Pitching", description: "Learn to build on top of Amazon Nova AI models and craft a winning pitch", type: "Workshop" },
     { date: "Mar 6", title: "Architect the Cloud", description: "Deep dive into AWS and the AI/ML services stack, hands-on AWS workshop exploring Kiro and Nova AI, career panel with AWS professionals, prizes and giveaways", type: "Event" },
     { date: "Mar 12", title: "Quarter Recap Meeting", description: "", type: "Workshop" },
-    { date: "Apr 2", title: "Consulting, EC2 & Gen AI Basics", description: "", type: "Workshop" },
+    { date: "Apr 2", title: "Consulting, EC2 & Gen AI Basics", description: "Sharpen client-facing skills in consulting training, explore compute in the cloud with Amazon EC2, and learn the fundamentals of generative AI", type: "Workshop" },
     { date: "Apr 9", title: "Exploring Compute", description: "Learn to build with cloud compute and deploy ML models for real world solutions", type: "Workshop" },
-    { date: "Apr 16", title: "Infra + Foundation Models", description: "", type: "Workshop" },
+    { date: "Apr 16", title: "Infra + Foundation Models", description: "Dive into infra & foundational models for real-world solutions", type: "Workshop" },
     { date: "Apr 23", title: "Building AI Agents", description: "Learn how to build and deploy AI agents while applying responsible AI principles", type: "Workshop" },
     { date: "Apr 30", title: "Storage & AI Security", description: "Learn to secure and scale AI with reliable data storage", type: "Workshop" },
     { date: "May 7", title: "AI Prompt Injection Challenge", description: "Learn to identify and defend against prompt injections", type: "Workshop" },
     { date: "May 14", title: "Building and Selling Tech", description: "Charles Harris, Solutions Architect at AWS, discusses how AI and cloud technologies are being built and brought to market today", type: "Event" },
     { date: "May 21", title: "Fireside Chat with AWS Architects", description: "Exclusive networking + Q&A session with AWS Solutions Architects and Account Managers led by Prasad Naik, AWS GenAI Sales Leader (Strategic Accounts)", type: "Event" },
     { date: "May 29", title: "AWS Office Tour", description: "AWS 'Day in the Life' Office Event", type: "Tour" },
+    { date: "Jun 4", title: "Yearly Recap Meeting", description: "", type: "Workshop" },
   ];
 
   return (
