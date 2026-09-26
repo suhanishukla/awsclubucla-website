@@ -3,54 +3,100 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import { Link } from "react-router-dom";
 
-const teamMembers = [
-  {
-    name: "Chaaya Patel",
-    role: "Founder",
-    image: "/chaaya.png",
-    objectPosition: "center -22px",
-    linkedin: "https://www.linkedin.com/in/chaayapatel/"
-  },
-  {
-    name: "Ashita Singh",
-    role: "Founder",
-    image: "/ashita.JPG",
-    objectPosition: "center -40px",
-    scale: 1.3,
-    linkedin: "https://www.linkedin.com/in/ashita-singh/"
-  },
+const executiveBoard = [
   {
     name: "Ishani Saran",
-    role: "Co-President",
-    image: "/ishani.jpg",
-    objectPosition: "center",
-    linkedin: "https://www.linkedin.com/in/ishani-saran/"
+    role: "Co-President"
   },
   {
     name: "Suhani Shukla",
-    role: "Co-President",
-    image: "/suhaniheadshot.JPG",
-    objectPosition: "center -15px",
-    scale: 1.6,
-    linkedin: "https://www.linkedin.com/in/suhani-s/"
+    role: "Co-President"
+  },
+  {
+    name: "Ben Moon",
+    role: "External Vice President"
+  },
+  {
+    name: "Aashima Khanna",
+    role: "Internal Vice President"
+  },
+  {
+    name: "Lily Wu",
+    role: "Vice President of Technology"
+  }
+];
+
+const directors = [
+  {
+    name: "Esha Shivakumar",
+    role: "Events Director"
+  },
+  {
+    name: "Ved Vyas",
+    role: "Partnerships Director"
+  },
+  {
+    name: "Khushi Tekriwal",
+    role: "Outreach Director"
+  },
+  {
+    name: "Jason Schacher",
+    role: "Outreach Director"
+  },
+  {
+    name: "Krisha Basrur",
+    role: "Finance Director"
+  },
+  {
+    name: "Anthony Navarrez",
+    role: "Marketing Director"
+  }
+];
+
+const alumni = [
+  {
+    name: "Chaaya Patel",
+    role: "Founder"
+  },
+  {
+    name: "Ashita Singh",
+    role: "Founder"
   },
   {
     name: "Sana Indap",
-    role: "Outreach, Marketing + Design Lead",
-    image: "/sanaheadshot.jpg",
-    objectPosition: "10px -15px",
-    scale: 1.4,
-    linkedin: "https://www.linkedin.com/in/sana-indap-66aa5713a/"
+    role: "Outreach, Marketing + Design Lead"
   },
   {
     name: "Proud Puangmaha",
-    role: "Partnerships Director",
-    image: "/proud.jpeg",
-    objectPosition: "center -30px",
-    scale: 1.3,
-    linkedin: "https://www.linkedin.com/in/proudpuangmaha/"
+    role: "Partnerships Director"
   }
 ];
+
+type TeamMember = {
+  name: string;
+  role: string;
+};
+
+const TeamMemberCard = ({ member }: { member: TeamMember }) => (
+  <Card className="bg-gradient-to-br from-primary/10 to-accent/5 border-primary/20 hover:border-primary/40 transition-all">
+    <CardContent className="p-6 flex flex-col items-center text-center min-h-32 justify-center">
+      <h3 className="text-xl font-semibold text-foreground mb-2">
+        {member.name}
+      </h3>
+      <p className="text-sm text-primary">
+        {member.role}
+      </p>
+    </CardContent>
+  </Card>
+);
+
+const MemberGrid = ({ members }: { members: TeamMember[] }) => (
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {members.map((member) => (
+      <TeamMemberCard key={member.name} member={member} />
+    ))}
+  </div>
+);
 
 const Team = () => {
   return (
@@ -60,45 +106,29 @@ const Team = () => {
       <main className="pt-24 pb-16 px-6">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-5xl font-bold text-center mb-16 text-foreground">
-            Meet the Founding Team
+            2026-27 Leadership
           </h1>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {teamMembers.map((member, index) => (
-              <a
-                key={index}
-                href={member.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block hover:scale-[1.02] transition-transform duration-300"
-              >
-              <Card 
-                key={index}
-                className="bg-gradient-to-br from-primary/10 to-accent/5 border-primary/20 hover:border-primary/40 transition-all"
-              >
-                <CardContent className="p-6 flex flex-col items-center text-center">
-                  <div className="w-40 h-40 rounded-lg overflow-hidden mb-4 bg-gradient-to-br from-primary/20 to-accent/10">
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                      style={{ 
-                        objectPosition: member.objectPosition || "center",
-                        transform: `scale(${member.scale || 1})`,
-                      }}
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-1">
-                    {member.name}
-                  </h3>
-                  <p className="text-sm text-primary">
-                    {member.role}
-                  </p>
-                </CardContent>
-              </Card>
-              </a>
-            ))}
-          </div>
+
+          <section className="mb-16">
+            <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
+              Executive Board
+            </h2>
+            <MemberGrid members={executiveBoard} />
+          </section>
+
+          <section className="mb-20">
+            <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
+              Leadership
+            </h2>
+            <MemberGrid members={directors} />
+          </section>
+
+          <section className="mb-16">
+            <h2 className="text-3xl font-semibold text-center mb-8 text-foreground">
+              Alumni
+            </h2>
+            <MemberGrid members={alumni} />
+          </section>
 
           <div className="flex justify-center">
           <Link to="/join">
