@@ -30,7 +30,7 @@ const Join = () => {
                   hover:shadow-[0_0_35px_rgba(120,200,255,0.6)]
                   hover:scale-[1.04]
                   transition-all duration-300 border border-white/10 ring-1 ring-inset ring-white/30">
-                  Interest Form
+                  Application Form
                 </Button>
               </a>
 
